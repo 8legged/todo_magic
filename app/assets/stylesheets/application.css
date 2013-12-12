@@ -1,0 +1,6 @@
+/*
+ *
+ * require bootstrap_init
+ *= require_self
+ *= require_tree .
+ */

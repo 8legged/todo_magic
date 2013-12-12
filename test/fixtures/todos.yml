@@ -1,0 +1,10 @@
+# Read about fixtures at
+# http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  what: MyString
+  completed_at: 2013-12-12 15:17:07
+
+two:
+  what: MyString
+  completed_at: 2013-12-12 15:17:07
