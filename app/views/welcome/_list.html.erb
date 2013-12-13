@@ -1,0 +1,19 @@
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th>What</th>
+        <th>Completed at</th>
+        <th></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @todos.each do |todo| %>
+      <tr>
+        <td><%= todo.what %></td>
+        <td><%= todo.completed_at %></td>
+        <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+      <% end %>
+    </tbody>
+  </table>

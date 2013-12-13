@@ -10,12 +10,8 @@ class TodosController < ApplicationController
 
   def create
     @todo = Todo.new(todo_params)
-
-    if @todo.save
-      redirect_to todos_url, notice: 'Todo was successfully created.'
-    else
-      render action: 'new'
-    end
+    @todo.save
+    @todos = Todo.all
   end
 
   private
