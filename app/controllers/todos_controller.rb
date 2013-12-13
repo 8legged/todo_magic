@@ -18,12 +18,6 @@ class TodosController < ApplicationController
     end
   end
 
-  def destroy
-    @todo = Todo.find(params[:id])
-    @todo.destroy
-    redirect_to todos_url
-  end
-
   private
   def todo_params
     params.require(:todo).permit(:what, :completed_at)
