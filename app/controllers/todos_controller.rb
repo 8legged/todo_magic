@@ -14,6 +14,11 @@ class TodosController < ApplicationController
     @todos = Todo.all
   end
 
+  def destroy
+   Todo.find(params[:id]).destroy
+   redirect_to root_url
+  end
+
   private
   def todo_params
     params.require(:todo).permit(:what, :completed_at)

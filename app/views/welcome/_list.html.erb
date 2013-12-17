@@ -13,6 +13,9 @@
         <td><%= todo.what %></td>
         <td><%= todo.completed_at %></td>
         <td><%= link_to 'Destroy', todo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+<!--
+        <td><%#= link_to 'delete', todo, method: :delete, remote: true, data: { confirm: 'Are you sure?' } %></td>
+-->
       </tr>
       <% end %>
     </tbody>
